@@ -4,6 +4,7 @@
 #'
 #' @return A GAlignmentPairs object
 #' @export
+#' @importFrom GenomicAlignments readGAlignmentPairs readGAlignments
 #'
 #' @examples
 #' x <- hic_import("example.bam")
