@@ -13,7 +13,7 @@ hic_import(file)
 A GAlignmentPairs object
 }
 \description{
-Imports HiC file
+Takes a local bam file and load it to the environment as an GAlignment object
 }
 \examples{
 x <- hic_import("example.bam")
