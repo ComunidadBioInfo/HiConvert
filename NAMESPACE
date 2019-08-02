@@ -2,3 +2,6 @@
 
 export(hic_export)
 export(hic_import)
+importFrom(GenomicAlignments,readGAlignmentPairs)
+importFrom(GenomicAlignments,readGAlignments)
+importFrom(GenomicRanges,granges)
