@@ -1,0 +1,42 @@
+---
+title: "HiConvert"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{HiConvert}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# HiConvert package
+
+This package is a file format converter of HiC sequencing files. The formats supported are: 
+
+* bam 
+* bedpe
+
+```{r setup}
+library(HiConvert)
+```
+
+## hic_import
+```{r}
+x <- hic_import("example.bam")
+```
+
+## hic_export
+```{r}
+hic_export(x, "example.bedpe")
+```
+
+## gi_import
+ toma un bedpe y genera un genomic interactions object
+ 
+ 
+gi_export
