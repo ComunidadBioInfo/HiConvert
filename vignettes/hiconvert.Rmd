@@ -1,0 +1,43 @@
+---
+title: "HiConvert: format conversion for HiC datasets"
+author: "Joselyn Chave, Carlos Barron and Alejandro Reyes"
+date: "`r format(Sys.Date(), '%m/%d/%Y')`"
+abstract: >
+  Several pipelines have been developed for the analysis of HiC
+  data. Each of them use specific formats, and researchers often 
+  loose time by converting from one format to another. The objective of
+  this package is to provide a general framework to convert between 
+  HiC data formats. 
+output:
+  rmarkdown::html_document:
+    highlight: pygments
+    toc: true
+    fig_width: 5
+vignette: >
+  %\VignetteIndexEntry{Analyzing RNA-seq data with DESeq2}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  %\usepackage[utf8]{inputenc}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Typically, data resulting from HiC experiments is analyzed either at the fragment level or summarized into genomic bins. Several analysis pipelines exist that enable users to characterize different aspects of their data, such as TADs, loops and compartments. However, each software uses their own formats and standarization of formats is currently lacking. This package provides a functions to convert between different software formats. 
+
+# Converting between formats
+
+Currently, 
+
+```{r setup}
+library(HiConvert)
+```
+
+## Converting between bams and bedpe files
+
+
+
