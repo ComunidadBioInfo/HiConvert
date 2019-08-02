@@ -6,6 +6,7 @@
 #' @param file path or name of the output file
 #'
 #' @return A sequence file with the specified format
+#' @importFrom GenomicRanges granges seqnames start end
 #' @export
 #'
 #' @examples
@@ -25,5 +26,6 @@ hic_export <- function(x, file) {
                              strand1 = strand(gfirst),
                              strand2 = strand(gsecond),
                              others = ".")
-  write.table(output_bedpe, file = file, row.names = FALSE, col.names = FALSE)
+  write.table(output_bedpe, file = file, row.names = FALSE,
+              col.names = FALSE, quote=FALSE, sep="\t")
 }

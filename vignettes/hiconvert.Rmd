@@ -39,5 +39,19 @@ library(HiConvert)
 
 ## Converting between bams and bedpe files
 
+The code below imports a bam file into *R* and stores it in a GenomicInteractions file. 
 
+```{r}
+in_file <- system.file( "extdata", "bam", "SRR400264_subset.bam",
+                        package="HiConvert", mustWork=TRUE )
+imported <- hic_import(in_file)
+imported
+```
+
+The following code export a GI file into a bedpe. 
+
+```{r}
+hic_export( imported, file="prueba.bedpe" )
+head( readLines( "prueba.bedpe" ) )
+```
 
