@@ -37,7 +37,7 @@ Currently,
 library(HiConvert)
 ```
 
-## Converting between bams and bedpe files
+## Converting between fragment-level formats bams and bedpe files
 
 The code below imports a bam file into *R* and stores it in a GenomicInteractions file. 
 
@@ -55,3 +55,4 @@ hic_export( imported, file="prueba.bedpe" )
 head( readLines( "prueba.bedpe" ) )
 ```
 
+## Converting between fragment-level formats bams and bedpe files
