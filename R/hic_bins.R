@@ -30,5 +30,7 @@ gi_export <- function( x, format="bedpe", file){
 }
 
 gi_import<-function(filename,type){
-  makeGenomicInteractionsFromFile(fn=filename,type = type)
+  if (type=="bedpe"){
+    makeGenomicInteractionsFromFile(fn=filename,type = type)
+  } else stop("the current version only supports bedpe files")
 }
