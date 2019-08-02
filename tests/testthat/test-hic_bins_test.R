@@ -7,7 +7,7 @@ test_that("Import and export work for bedpe", {
                                               type="homer",
                                               experiment_name = "HiC 100kb",
                                               description = "HiC 100kb resolution")
-  gi_export( hic_data, format="bedpe", file="hic_data.bedpe" )
-  hic_data_read <- gi_import("hic_data.bedpe")
-  expect_equal( hic_data, hic_data_read )
+  gi_export( hic_data, format="bedpe", file="hic_data" )
+  hic_data_read <- gi_import("hic_data.bedpe","bedpe")
+  expect_equal( class(hic_data),class(hic_data_read) )
 } )
