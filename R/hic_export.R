@@ -31,10 +31,9 @@ hic_export <- function(x, file, format) {
                                strand2 = strand(gsecond),
                                others = ".")
     write.table(output_bedpe, file = file, row.names = FALSE,
-	col.names = FALSE, quote=FALSE, sep="\t")
-)
-  }
+	    col.names = FALSE, quote=FALSE, sep="\t")
+   }
   if (format == "bam") {
     export(x, file, format = format)
-
   }
+}
